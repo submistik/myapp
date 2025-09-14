@@ -1,0 +1,106 @@
+/* Общий стиль */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* Заголовок */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Форма */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 150px;
+}
+
+button {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+/* Список проектов */
+#projectList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 15px;
+}
+
+#projectList li {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Название проекта */
+#projectList li b {
+  font-size: 1.1em;
+  color: #111;
+}
+
+/* Ссылки */
+#projectList li a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#projectList li a:hover {
+  text-decoration: underline;
+}
+
+/* Кнопка удалить */
+#projectList li button {
+  background: #e74c3c;
+  padding: 8px 12px;
+  align-self: flex-start;
+}
+
+#projectList li button:hover {
+  background: #c0392b;
+}
+
+/* 📱 Адаптив для телефонов */
+@media (max-width: 600px) {
+  form {
+    flex-direction: column;
+  }
+  input, select, button {
+    width: 100%;
+  }
+}

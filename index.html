@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Проекты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Ссылки на проекты</h1>
+
+  <form id="projectForm">
+    <input type="text" id="name" placeholder="Название проекта" required>
+    <input type="url" id="url" placeholder="Ссылка" required>
+    <select id="cloud">
+      <option value="Google Drive">Google Drive</option>
+      <option value="Dropbox">Dropbox</option>
+      <option value="GitHub">GitHub</option>
+      <option value="Яндекс.Диск">Яндекс.Диск</option>
+      <option value="Другое">Другое</option>
+    </select>
+    <button type="submit">Добавить</button>
+  </form>
+
+  <ul id="projectList"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
